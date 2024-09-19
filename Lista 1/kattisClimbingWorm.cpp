@@ -5,7 +5,9 @@ int main(){
     int a, b, h;
     cin >> a >> b >> h;
 
-    if(b >= h) cout << 1 << "\n";
-    else cout << ceil((double)(h-b)/(a-b)) << "\n";
+    int res = ceil((double)(h-a)/(a-b));
+
+    if(a >= h) cout << 1 << "\n";
+    else cout << res+1 << "\n";
     return 0;
 }
